@@ -30,13 +30,35 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.forEach will call the callback funtion, it will pass parameters from the array element, and return an array of all of the elements, you can also narrow one key:value pair in the array to return it.
+
+.map will apply callback to the values that are passed from each array element, it takes the function return value and it returns the new array. It allows you to filter out certain elements of a given array. 
+
 2. What is the difference between a function and a method?
+
+A function allows us to execute a code that is protected in a block of scope, the lexical scope.
+
+A method is a function inside of an object. In a method, the function will have its "this" property set to the object.
 
 3. What is closure?
 
+A closure is a combination of a function that has access to variables outside of the lexical environment, lexical scope within which that function is declared.  A function can reach a variable on the outer context.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. Window binding - it's like a forest of trees, it is the global object. it does not point to an object, you don't know what you're pointing at, so it's like you're pointing to the entire forest.
+
+    2. Implicit binding - Will bind to an object or method, it will point at something specific, when a function is called via an object key.
+
+    3. Explicit binding - used for functions, it will tell you where you want to go by using .call, .apply, or .bind methods inside the function. .Call passes arguments, .Apply needs an array if you want to pass arguments. .Bind is used to save the "this" keyword to be executed at a later time when invoked. 
+
+    4. New binding -  It's when a constructor function has preceeding it, "this", it is set to the new object created by the new call function.
+
 5. Why do we need super() in an extended class?
+
+The super keyword is used to access and clal functions on an object's parent. Used in a constructor, the super keyword appears alone and must be used before the this keyword is super. Also used to call functions on an parent object.
+
+
 
 ## Project Set up
 
