@@ -45,20 +45,20 @@ console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-the nestedfunction is within or inside the block scope of the function and can access the variable internal because the outside function passes down everything to the nested inner functions. The inside can access the outer functions, but the outer function in the global scope cannot access the inner nested functions.
+// the nestedfunction is within or inside the block scope of the function and can access the variable internal because the outside function passes down everything to the nested inner functions. The inside can access the outer functions, but the outer function in the global scope cannot access the inner nested functions.
 
-// Explanation: 
+// // Explanation: 
 
 
-const external = "I'm outside the function";
+// const external = "I'm outside the function";
 
-function myFunction() {
-  console.log(external);
-  const internal = "Hello! I'm inside myFunction!";
+// function myFunction() {
+//   console.log(external);
+//   const internal = "Hello! I'm inside myFunction!";
 
-  function nestedFunction() {
-    console.log(internal);
-  };
-  nestedFunction();
-}
-myFunction();
+//   function nestedFunction() {
+//     console.log(internal);
+//   };
+//   nestedFunction();
+// }
+// myFunction();

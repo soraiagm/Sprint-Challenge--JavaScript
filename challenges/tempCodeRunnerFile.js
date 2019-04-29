@@ -1,3 +1,6 @@
-consume(2,2,add); // 4
-consume(10,16,multiply); // 160
-consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+const uni = []
+
+for (let i = 0; i < graduates.length; i++){
+  uni.push(graduates[i].university.match(/Uni/))
+  console.log(uni[i])
+}
