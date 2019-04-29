@@ -1,16 +1,11 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
 
-// function CuboidMaker(dimensions) {
-//     this.length = dimensions.length;
-//     this.width = dimensions.width;
-//     this.height = dimensions.height;
-//   }
 
   class CuboidMaker {
-      constructor(dimensions) {
-          this.length = dimensions.length;
-          this.width = dimensions.width;
-          this.height = dimensions.height;
+      constructor(length, width, height) {
+          this.length = length;
+          this.width = width;
+          this.height = height;
       }
       volume() {
         return this.length * this.width * this.height;
@@ -21,13 +16,7 @@
       }
   }
 
-
-
-  const cuboid = new CuboidMaker({
-    length: 4,
-    width: 5,
-    Height: 5,
-  });
+  const cuboid = new CuboidMaker(4, 5, 5);
 
 
 
